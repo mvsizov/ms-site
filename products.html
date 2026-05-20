@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikhail Sizov | Products</title>
+    <meta
+      name="description"
+      content="Product work by Mikhail Sizov, including AlterAI Notes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="top">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MS</span>
+        <span class="brand-name">mikhail sizov</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="./index.html">home</a>
+        <a href="./work.html">work</a>
+        <a href="./teaching.html">teaching</a>
+        <a class="is-current" href="./products.html">products</a>
+        <a href="./contact.html">contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">products</p>
+          <h2>Products I am building outside core banking workflows.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card product-card">
+            <p class="project-year">2026</p>
+            <h3>AlterAI Notes</h3>
+            <p>
+              A minimal AI notes product with two windows: fast capture and
+              analytics. Notes are stored locally, searchable by date and content,
+              and can be queried with different LLM providers.
+            </p>
+            <ul class="product-list">
+              <li>Two-window workflow: Input and Analytics</li>
+              <li>Local-first storage with safe write behavior</li>
+              <li>Smart note selection before LLM query</li>
+              <li>Supports OpenAI, Claude, Gemini, DeepSeek, and custom endpoints</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
