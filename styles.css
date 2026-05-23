@@ -382,7 +382,15 @@ h2 {
 
 .cv-banner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   margin-bottom: 1.55rem;
+}
+
+.cv-banner-contacts {
+  margin-top: 0;
 }
 
 .timeline-item {
