@@ -690,6 +690,11 @@ h2 {
   margin: 0;
 }
 
+.portrait-bio strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .portrait-links {
   margin-top: 1.7rem;
   display: flex;
