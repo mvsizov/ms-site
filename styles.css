@@ -195,6 +195,8 @@ main,
   font-size: 0.78rem;
   line-height: 1.45;
   min-width: 0;
+  cursor: pointer;
+  user-select: none;
 }
 .hero-tags .tag-label {
   color: var(--muted);
@@ -216,7 +218,7 @@ main,
   animation: tags-scroll 16s linear infinite;
   will-change: transform;
 }
-.hero-tags .tag-marquee:hover .tag-track { animation-play-state: paused; }
+.hero-tags.is-paused .tag-track { animation-play-state: paused; }
 .hero-tags .tag-group {
   display: inline-flex;
   padding-right: 1.6em;

@@ -284,6 +284,13 @@ snapshotEnglish();
 applyLang(detectInitialLang());
 typewriteName();
 
+// Tap anywhere on the interests row to pause / resume the marquee
+document.querySelectorAll(".hero-tags").forEach((row) => {
+  row.addEventListener("click", () => {
+    row.classList.toggle("is-paused");
+  });
+});
+
 document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const next = document.documentElement.lang === "ru" ? "en" : "ru";
