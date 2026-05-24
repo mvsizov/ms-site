@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title_posts">Mikhail Sizov | Posts</title>
+    <meta
+      name="description"
+      content="Posts and links from Mikhail Sizov — Telegram, YouTube, and other writing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="top">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MS</span>
+        <span class="brand-name" data-i18n="brand_name">mikhail sizov</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="./index.html" data-i18n="nav_home">home</a>
+        <a href="./work.html" data-i18n="nav_work">work</a>
+        <a href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a class="is-current" href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="posts_eyebrow">posts</p>
+          <h2 data-i18n="posts_title">Notes, links, things I publish</h2>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter posts by source">
+          <button type="button" class="filter-chip is-active" data-filter="all" data-i18n="posts_filter_all">all</button>
+          <button type="button" class="filter-chip" data-filter="telegram">Telegram</button>
+          <button type="button" class="filter-chip" data-filter="youtube">YouTube</button>
+          <button type="button" class="filter-chip" data-filter="linkedin">LinkedIn</button>
+          <button type="button" class="filter-chip" data-filter="article">Article</button>
+        </div>
+
+        <div class="post-list" id="post-list">
+          <!--
+            Add posts here. Template:
+
+            <article class="post-item" data-tags="telegram">
+              <p class="post-date">DD MMM YYYY</p>
+              <h3>Post title</h3>
+              <p>Short description or excerpt of the post.</p>
+              <div class="post-links">
+                <a href="https://t.me/..." target="_blank" rel="noreferrer">Telegram</a>
+                <a href="https://youtu.be/..." target="_blank" rel="noreferrer">YouTube</a>
+              </div>
+            </article>
+          -->
+        </div>
+
+        <div class="empty-state" id="post-empty">
+          <p class="eyebrow" data-i18n="posts_empty_eyebrow">work in progress</p>
+          <p class="empty-copy" data-i18n="posts_empty_copy">
+            Posts will appear here soon — short notes with links to Telegram,
+            YouTube and other places I write.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

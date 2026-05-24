@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title_projects">Mikhail Sizov | Projects</title>
+    <meta
+      name="description"
+      content="Projects by Mikhail Sizov — filterable by topic."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="top">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MS</span>
+        <span class="brand-name" data-i18n="brand_name">mikhail sizov</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="./index.html" data-i18n="nav_home">home</a>
+        <a href="./work.html" data-i18n="nav_work">work</a>
+        <a class="is-current" href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="proj_eyebrow">projects</p>
+          <h2 data-i18n="proj_title">Things I am building</h2>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter projects by tag">
+          <button type="button" class="filter-chip is-active" data-filter="all" data-i18n="proj_filter_all">all</button>
+          <button type="button" class="filter-chip" data-filter="ai">AI</button>
+          <button type="button" class="filter-chip" data-filter="investment">Investment</button>
+          <button type="button" class="filter-chip" data-filter="finance">Finance</button>
+          <button type="button" class="filter-chip" data-filter="risk">Risk</button>
+          <button type="button" class="filter-chip" data-filter="research">Research</button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <!--
+            Add project cards here. Template:
+
+            <article class="project-card" data-tags="ai finance">
+              <p class="project-year">YEAR</p>
+              <ul class="project-tags">
+                <li>AI</li>
+                <li>Finance</li>
+              </ul>
+              <h3>Project title</h3>
+              <p>Short description of what the project does.</p>
+              <div class="project-links">
+                <a href="https://github.com/..." target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://example.com" target="_blank" rel="noreferrer">Live</a>
+                <a href="https://youtu.be/..." target="_blank" rel="noreferrer">Demo</a>
+              </div>
+            </article>
+          -->
+        </div>
+
+        <div class="empty-state" id="empty-state">
+          <p class="eyebrow" data-i18n="proj_empty_eyebrow">work in progress</p>
+          <p class="empty-copy" data-i18n="proj_empty_copy">
+            Projects will appear here soon. Come back later, or
+            <a href="./index.html#contact">get in touch</a> if you want to hear about
+            them earlier.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
