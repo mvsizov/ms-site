@@ -213,7 +213,7 @@ main,
 .hero-tags .tag-track {
   display: inline-flex;
   white-space: nowrap;
-  animation: tags-scroll 32s linear infinite;
+  animation: tags-scroll 16s linear infinite;
   will-change: transform;
 }
 .hero-tags .tag-marquee:hover .tag-track { animation-play-state: paused; }
