@@ -93,8 +93,8 @@ const TRANSLATIONS_RU = {
   // home — hero
   hero_tags: '<span class="hashtag">#ai</span><span class="sep">·</span><span class="hashtag">#квант-финансы</span><span class="sep">·</span><span class="hashtag">#моделирование-рисков</span><span class="sep">·</span><span class="hashtag">#финтех</span><span class="sep">·</span><span class="hashtag">#инвестиции</span><span class="sep">·</span><span class="hashtag">#llm-продукты</span>',
   hero_name: "Михаил Сизов",
-  hero_p1: "Работаю в Т-Банке как Lead Analyst — руковожу командой моделирования структурных рисков.",
-  hero_p2: "До этого почти три года в Райффайзенбанке как Senior Quantitative Analyst (Vice President) в Управлении рисками финансовых рынков; ещё раньше — моделирование рисков в Банке России.",
+  hero_p1: "Работаю лидом моделирования структурных рисков в Т-Банке.",
+  hero_p2: "До этого почти три года был старшим количественным аналитиком в Управлении рисками финансовых рынков Райффайзенбанка; ещё раньше — моделирование рисков в Банке России.",
   hero_p3: "Учился в НИУ ВШЭ — магистратура Data Science, бакалавриат «Экономика и финансы» в МИЭФ с двойным дипломом London School of Economics (ICEF). FRM Part I & II.",
   hero_p4: "Вне работы преподавал в ВШЭ — Quantitative Finance и Asset Pricing & Financial Markets.",
   hero_p5: "Больше всего люблю собирать в финтехе, инвестициях и риске — небольшие штуки, которые превращают аналитику во что-то, чем реально можно пользоваться.",
