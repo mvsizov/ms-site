@@ -187,20 +187,55 @@ main,
 }
 
 .hero-tags {
-  color: var(--muted);
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin: 0 0 0.6rem 0;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.78rem;
-  letter-spacing: 0.04em;
-  margin: 0 0 0.6rem 0;
   line-height: 1.45;
+  min-width: 0;
+}
+.hero-tags .tag-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+.hero-tags .tag-marquee {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+  flex: 1;
+  min-width: 0;
+}
+.hero-tags .tag-track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: tags-scroll 32s linear infinite;
+  will-change: transform;
+}
+.hero-tags .tag-marquee:hover .tag-track { animation-play-state: paused; }
+.hero-tags .tag-group {
+  display: inline-flex;
+  padding-right: 1.6em;
 }
 .hero-tags .hashtag {
-  color: var(--ink);
+  color: var(--muted);
   font-weight: 500;
 }
 .hero-tags .sep {
-  opacity: 0.45;
-  margin: 0 0.4em;
+  color: var(--muted);
+  opacity: 0.4;
+  margin: 0 0.5em;
+}
+@keyframes tags-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-tags .tag-track { animation: none; }
 }
 
 h1 {

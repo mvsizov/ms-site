@@ -91,7 +91,7 @@ const TRANSLATIONS_RU = {
   nav_contact: "контакты",
 
   // home — hero
-  hero_tags: '<span class="hashtag">#ai</span><span class="sep">·</span><span class="hashtag">#квант-финансы</span><span class="sep">·</span><span class="hashtag">#моделирование-рисков</span><span class="sep">·</span><span class="hashtag">#финтех</span><span class="sep">·</span><span class="hashtag">#инвестиции</span><span class="sep">·</span><span class="hashtag">#llm-продукты</span>',
+  hero_tags: '<span class="tag-label">focus</span><span class="tag-marquee"><span class="tag-track"><span class="tag-group"><span class="hashtag">#ai</span><span class="sep">·</span><span class="hashtag">#квант-финансы</span><span class="sep">·</span><span class="hashtag">#моделирование-рисков</span><span class="sep">·</span><span class="hashtag">#финтех</span><span class="sep">·</span><span class="hashtag">#инвестиции</span><span class="sep">·</span><span class="hashtag">#llm-продукты</span></span><span class="tag-group" aria-hidden="true"><span class="hashtag">#ai</span><span class="sep">·</span><span class="hashtag">#квант-финансы</span><span class="sep">·</span><span class="hashtag">#моделирование-рисков</span><span class="sep">·</span><span class="hashtag">#финтех</span><span class="sep">·</span><span class="hashtag">#инвестиции</span><span class="sep">·</span><span class="hashtag">#llm-продукты</span></span></span></span>',
   hero_name: "Михаил Сизов",
   hero_p1: "Работаю лидом моделирования структурных рисков в Т-Банке.",
   hero_p2: "До этого почти три года был старшим количественным аналитиком в Управлении рисками финансовых рынков Райффайзенбанка; ещё раньше — моделирование рисков в Банке России.",
