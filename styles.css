@@ -683,13 +683,33 @@ h2 {
 
 @media (max-width: 860px) {
   .portrait-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(110px, 38%) minmax(0, 1fr);
+    gap: clamp(0.9rem, 3vw, 1.6rem);
     text-align: left;
   }
 
   .portrait {
-    max-width: 320px;
+    max-width: none;
   }
+}
+
+@media (max-width: 480px) {
+  .portrait-layout {
+    grid-template-columns: minmax(90px, 32%) minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+}
+
+.portrait-name.typing::after {
+  content: "▍";
+  display: inline-block;
+  margin-left: 0.05em;
+  font-weight: 400;
+  color: var(--ink);
+  animation: portrait-name-blink 1s steps(1) infinite;
+}
+@keyframes portrait-name-blink {
+  50% { opacity: 0; }
 }
 
 /* --- Filter chips (projects, posts) --- */

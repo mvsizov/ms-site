@@ -255,12 +255,39 @@ function detectInitialLang() {
   return browser.startsWith("ru") ? "ru" : "en";
 }
 
+// Typewriter effect for the portrait name on the home page
+let _typeTimer = null;
+function typewriteName() {
+  const el = document.querySelector(".portrait-name");
+  if (!el) return;
+  if (_typeTimer) {
+    clearTimeout(_typeTimer);
+    _typeTimer = null;
+  }
+  const text = el.textContent;
+  el.classList.add("typing");
+  el.textContent = "";
+  let i = 0;
+  const tick = () => {
+    if (i <= text.length) {
+      el.textContent = text.slice(0, i);
+      i++;
+      _typeTimer = setTimeout(tick, 90);
+    } else {
+      _typeTimer = setTimeout(() => el.classList.remove("typing"), 1200);
+    }
+  };
+  tick();
+}
+
 snapshotEnglish();
 applyLang(detectInitialLang());
+typewriteName();
 
 document.querySelectorAll("[data-lang-toggle]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const next = document.documentElement.lang === "ru" ? "en" : "ru";
     applyLang(next);
+    typewriteName();
   });
 });
