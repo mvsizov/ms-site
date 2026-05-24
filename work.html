@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mikhail Sizov | Work</title>
+    <title data-i18n="page_title_work">Mikhail Sizov | Work</title>
     <meta
       name="description"
       content="Work experience, education and credentials — Mikhail Sizov."
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
@@ -26,14 +26,15 @@
     <header class="topbar" id="top">
       <a class="brand" href="./index.html">
         <span class="brand-mark">MS</span>
-        <span class="brand-name">mikhail sizov</span>
+        <span class="brand-name" data-i18n="brand_name">mikhail sizov</span>
       </a>
       <nav class="topbar-nav">
-        <a href="./index.html">home</a>
-        <a class="is-current" href="./work.html">work</a>
-        <a href="./projects.html">projects</a>
-        <a href="./posts.html">posts</a>
-        <a href="./index.html#contact">contact</a>
+        <a href="./index.html" data-i18n="nav_home">home</a>
+        <a class="is-current" href="./work.html" data-i18n="nav_work">work</a>
+        <a href="./projects.html" data-i18n="nav_projects">projects</a>
+        <a href="./posts.html" data-i18n="nav_posts">posts</a>
+        <a href="./index.html#contact" data-i18n="nav_contact">contact</a>
+        <button type="button" class="lang-toggle" data-lang-toggle aria-label="Switch to Russian">ru</button>
       </nav>
     </header>
 
@@ -45,6 +46,7 @@
             href="./assets/cv-mikhail-sizov-2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            data-i18n="cv_button"
           >
             download my cv
           </a>
@@ -56,81 +58,57 @@
         </div>
 
         <div class="section-head">
-          <p class="eyebrow">experience</p>
-          <h2>Where I have worked</h2>
+          <p class="eyebrow" data-i18n="work_exp_eyebrow">experience</p>
+          <h2 data-i18n="work_exp_title">Where I have worked</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline-item">
-            <p class="timeline-date">FEB 2026 — PRESENT</p>
+            <p class="timeline-date" data-i18n="t_date">FEB 2026 — PRESENT</p>
             <div>
-              <h3>T Bank</h3>
-              <p class="timeline-meta">Full-time · Moscow, Russia</p>
+              <h3 data-i18n="t_company">T Bank</h3>
+              <p class="timeline-meta" data-i18n="t_meta">Full-time · Moscow, Russia</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Lead Analyst — Structural Risk Modeling Team Lead</h4>
-                  <p>Feb 2026 — Present</p>
+                  <h4 data-i18n="t_role">Lead Analyst — Structural Risk Modeling Team Lead</h4>
+                  <p data-i18n="t_period">Feb 2026 — Present</p>
                 </article>
               </div>
             </div>
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">MAY 2023 — FEB 2026</p>
+            <p class="timeline-date" data-i18n="r_date">MAY 2023 — FEB 2026</p>
             <div>
-              <h3>Raiffeisen Bank Russia</h3>
-              <p class="timeline-meta">Full-time · 2 yrs 10 mos · Moscow, Russia</p>
+              <h3 data-i18n="r_company">Raiffeisen Bank Russia</h3>
+              <p class="timeline-meta" data-i18n="r_meta">Full-time · 2 yrs 10 mos · Moscow, Russia</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Senior Quantitative Analyst, Vice President — Financial Markets Risk Management</h4>
-                  <p>Nov 2024 — Feb 2026 · 1 yr 4 mos</p>
+                  <h4 data-i18n="r_role1">Senior Quantitative Analyst, Vice President — Financial Markets Risk Management</h4>
+                  <p data-i18n="r_period1">Nov 2024 — Feb 2026 · 1 yr 4 mos</p>
                   <ul>
-                    <li>
-                      Designed and deployed an internal LLM chatbot that interprets
-                      user questions, generates SQL, and retrieves real-time risk
-                      data from internal systems.
-                    </li>
-                    <li>
-                      Expanded the chatbot to automatically generate committee
-                      presentations, run what-if scenario analysis, and explain
-                      liquidity-metric changes.
-                    </li>
-                    <li>
-                      Developed MCP servers that automate report generation and
-                      integrate tools to calculate liquidity and interest-rate
-                      risks.
-                    </li>
-                    <li>
-                      Built an AI-driven equity benchmark portfolio for fund
-                      performance comparison, using structured company and macro
-                      inputs to generate explainable stock selection and benchmark
-                      returns.
-                    </li>
+                    <li data-i18n="r_b11">Designed and deployed an internal LLM chatbot that interprets user questions, generates SQL, and retrieves real-time risk data from internal systems.</li>
+                    <li data-i18n="r_b12">Expanded the chatbot to automatically generate committee presentations, run what-if scenario analysis, and explain liquidity-metric changes.</li>
+                    <li data-i18n="r_b13">Developed MCP servers that automate report generation and integrate tools to calculate liquidity and interest-rate risks.</li>
+                    <li data-i18n="r_b14">Built an AI-driven equity benchmark portfolio for fund performance comparison, using structured company and macro inputs to generate explainable stock selection and benchmark returns.</li>
                   </ul>
                 </article>
 
                 <article class="timeline-role">
-                  <h4>Senior Quantitative Analyst — Financial Markets Risk Management</h4>
-                  <p>Jul 2024 — Nov 2024 · 5 mos</p>
+                  <h4 data-i18n="r_role2">Senior Quantitative Analyst — Financial Markets Risk Management</h4>
+                  <p data-i18n="r_period2">Jul 2024 — Nov 2024 · 5 mos</p>
                   <ul>
-                    <li>Established benchmarks to evaluate the performance of mutual funds.</li>
-                    <li>Updated prepayment models for private loans and intraday liquidity models for corporate liabilities.</li>
+                    <li data-i18n="r_b21">Established benchmarks to evaluate the performance of mutual funds.</li>
+                    <li data-i18n="r_b22">Updated prepayment models for private loans and intraday liquidity models for corporate liabilities.</li>
                   </ul>
                 </article>
 
                 <article class="timeline-role">
-                  <h4>Quantitative Analyst — Financial Markets Risk Management</h4>
-                  <p>May 2023 — Jun 2024 · 1 yr 2 mos</p>
+                  <h4 data-i18n="r_role3">Quantitative Analyst — Financial Markets Risk Management</h4>
+                  <p data-i18n="r_period3">May 2023 — Jun 2024 · 1 yr 2 mos</p>
                   <ul>
-                    <li>
-                      Built models to assess liquidity and interest-rate risks of
-                      corporate and private liabilities, including off-balance
-                      components.
-                    </li>
-                    <li>
-                      Constructed models to calculate the implied volatility of
-                      currency options.
-                    </li>
+                    <li data-i18n="r_b31">Built models to assess liquidity and interest-rate risks of corporate and private liabilities, including off-balance components.</li>
+                    <li data-i18n="r_b32">Constructed models to calculate the implied volatility of currency options.</li>
                   </ul>
                 </article>
               </div>
@@ -138,39 +116,27 @@
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">DEC 2021 — MAY 2023</p>
+            <p class="timeline-date" data-i18n="cbr_date">DEC 2021 — MAY 2023</p>
             <div>
-              <h3>Bank of Russia (CBR)</h3>
-              <p class="timeline-meta">Full-time · 1 yr 6 mos · Moscow, Russia</p>
+              <h3 data-i18n="cbr_company">Bank of Russia (CBR)</h3>
+              <p class="timeline-meta" data-i18n="cbr_meta">Full-time · 1 yr 6 mos · Moscow, Russia</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>Leading Economist — Risk Modeling, Department of Banking Regulation &amp; Analytics</h4>
-                  <p>Dec 2022 — May 2023 · 6 mos</p>
+                  <h4 data-i18n="cbr_role1">Leading Economist — Risk Modeling, Department of Banking Regulation &amp; Analytics</h4>
+                  <p data-i18n="cbr_period1">Dec 2022 — May 2023 · 6 mos</p>
                   <ul>
-                    <li>
-                      Applied ML techniques (boosting, logits, etc.) to develop an
-                      Early Warning System for detecting banks' risky borrowers.
-                    </li>
-                    <li>Used simulations to assign PD to credit ratings.</li>
-                    <li>
-                      Validated income-prediction models and suggested criteria
-                      for data provided by banks.
-                    </li>
+                    <li data-i18n="cbr_b11">Applied ML techniques (boosting, logits, etc.) to develop an Early Warning System for detecting banks' risky borrowers.</li>
+                    <li data-i18n="cbr_b12">Used simulations to assign PD to credit ratings.</li>
+                    <li data-i18n="cbr_b13">Validated income-prediction models and suggested criteria for data provided by banks.</li>
                   </ul>
                 </article>
 
                 <article class="timeline-role">
-                  <h4>1st Category Economist — Risk Modeling, Department of Banking Regulation &amp; Analytics</h4>
-                  <p>Dec 2021 — Dec 2022 · 1 yr 1 mo</p>
+                  <h4 data-i18n="cbr_role2">1st Category Economist — Risk Modeling, Department of Banking Regulation &amp; Analytics</h4>
+                  <p data-i18n="cbr_period2">Dec 2021 — Dec 2022 · 1 yr 1 mo</p>
                   <ul>
-                    <li>
-                      Developed a stochastic banks' balance-sheet model using
-                      optimization techniques.
-                    </li>
-                    <li>
-                      Participated in PD modeling and ad-hoc analytics on banks'
-                      data.
-                    </li>
+                    <li data-i18n="cbr_b21">Developed a stochastic banks' balance-sheet model using optimization techniques.</li>
+                    <li data-i18n="cbr_b22">Participated in PD modeling and ad-hoc analytics on banks' data.</li>
                   </ul>
                 </article>
               </div>
@@ -178,39 +144,30 @@
           </article>
 
           <article class="timeline-item">
-            <p class="timeline-date">2021</p>
+            <p class="timeline-date" data-i18n="i_date">2021</p>
             <div>
-              <h3>Limpid VC · Mars Wrigley · Milestone Capital</h3>
-              <p class="timeline-meta">Internships · 2021</p>
+              <h3 data-i18n="i_company">Limpid VC · Mars Wrigley · Milestone Capital</h3>
+              <p class="timeline-meta" data-i18n="i_meta">Internships · 2021</p>
               <div class="timeline-role-stack">
                 <article class="timeline-role">
-                  <h4>VC Analyst — Limpid VC Fund</h4>
-                  <p>Sep 2021 — Dec 2021</p>
+                  <h4 data-i18n="i_vc_role">VC Analyst — Limpid VC Fund</h4>
+                  <p data-i18n="i_vc_period">Sep 2021 — Dec 2021</p>
                   <ul>
-                    <li>
-                      Analyzed start-up metrics, prepared and presented scoring
-                      models, communicated with founders directly.
-                    </li>
+                    <li data-i18n="i_vc_b1">Analyzed start-up metrics, prepared and presented scoring models, communicated with founders directly.</li>
                   </ul>
                 </article>
                 <article class="timeline-role">
-                  <h4>FP&amp;A Trainee — Mars Wrigley</h4>
-                  <p>May 2021 — Oct 2021</p>
+                  <h4 data-i18n="i_mars_role">FP&amp;A Trainee — Mars Wrigley</h4>
+                  <p data-i18n="i_mars_period">May 2021 — Oct 2021</p>
                   <ul>
-                    <li>
-                      Analyzed P&amp;L and Net Cashflow Statements, consolidated
-                      KPIs, supported financial planning.
-                    </li>
+                    <li data-i18n="i_mars_b1">Analyzed P&amp;L and Net Cashflow Statements, consolidated KPIs, supported financial planning.</li>
                   </ul>
                 </article>
                 <article class="timeline-role">
-                  <h4>Private Equity Analyst Intern — Milestone Capital</h4>
-                  <p>Mar 2021 — Jun 2021</p>
+                  <h4 data-i18n="i_ms_role">Private Equity Analyst Intern — Milestone Capital</h4>
+                  <p data-i18n="i_ms_period">Mar 2021 — Jun 2021</p>
                   <ul>
-                    <li>
-                      Worked with databases analyzing companies; summarized CIMs
-                      and Teasers; conducted industry research.
-                    </li>
+                    <li data-i18n="i_ms_b1">Worked with databases analyzing companies; summarized CIMs and Teasers; conducted industry research.</li>
                   </ul>
                 </article>
               </div>
@@ -221,22 +178,22 @@
 
       <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">education</p>
-          <h2>Education</h2>
+          <p class="eyebrow" data-i18n="edu_eyebrow">education</p>
+          <h2 data-i18n="edu_title">Education</h2>
         </div>
         <div class="section-split">
           <article class="panel">
-            <p class="eyebrow">2022 — 2025</p>
-            <h3>MSc Data Science</h3>
-            <p>
+            <p class="eyebrow" data-i18n="msc_eyebrow">2022 — 2025</p>
+            <h3 data-i18n="msc_title">MSc Data Science</h3>
+            <p data-i18n="msc_p">
               Higher School of Economics (HSE), Faculty of Computer Science.
               GPA 7.95 / 10.
             </p>
           </article>
           <article class="panel">
-            <p class="eyebrow">2018 — 2022</p>
-            <h3>BSc Economics &amp; Finance</h3>
-            <p>
+            <p class="eyebrow" data-i18n="bsc_eyebrow">2018 — 2022</p>
+            <h3 data-i18n="bsc_title">BSc Economics &amp; Finance</h3>
+            <p data-i18n="bsc_p">
               HSE / International College of Economics and Finance (ICEF) — dual
               degree with the London School of Economics. GPA 8.29 / 10.
             </p>
@@ -246,19 +203,19 @@
 
       <section class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">credentials</p>
-          <h2>Certifications &amp; languages</h2>
+          <p class="eyebrow" data-i18n="cred_eyebrow">credentials</p>
+          <h2 data-i18n="cred_title">Certifications &amp; languages</h2>
         </div>
         <div class="section-split">
           <article class="panel">
-            <p class="eyebrow">aug 2025</p>
-            <h3>FRM Part I &amp; II — Certified</h3>
-            <p>Financial Risk Manager certification by GARP.</p>
+            <p class="eyebrow" data-i18n="frm_eyebrow">aug 2025</p>
+            <h3 data-i18n="frm_title">FRM Part I &amp; II — Certified</h3>
+            <p data-i18n="frm_p">Financial Risk Manager certification by GARP.</p>
           </article>
           <article class="panel">
-            <p class="eyebrow">languages &amp; tools</p>
-            <h3>Python, SQL, R</h3>
-            <p>
+            <p class="eyebrow" data-i18n="langs_eyebrow">languages &amp; tools</p>
+            <h3 data-i18n="langs_title">Python, SQL, R</h3>
+            <p data-i18n="langs_p">
               Russian (native), English (fluent, IELTS 7.5).
             </p>
           </article>
